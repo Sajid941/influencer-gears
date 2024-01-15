@@ -1,0 +1,73 @@
+/* shared styles */
+* {
+        margin: 0;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        font-family: 'Poppins', sans-serif;
+}
+:root{
+        --primary-color:#3A3A3A;
+        --primary-btn-color:#E02C6D;
+}
+
+/* nav section styles */
+header{
+        margin: 80px 120px 0 120px;
+
+}
+nav {
+        display: flex;
+        justify-content: space-between;
+}
+
+nav>ul {
+        display: flex;
+        list-style: none;
+}
+
+ul a {
+        text-decoration: none;
+        margin-right: 15px;
+        color: var(--primary-color);
+        font-weight: 600;
+}
+.nav-title{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--primary-color);
+}
+
+/* banner seciton styles */
+.banner-section{
+        display: flex;
+        gap:350px
+}
+.banner-section div{
+        margin-top: 120px;
+}
+.banner-title{
+        color: var(--primary-color);
+        font-size: 3.25rem;
+        font-weight: 700;
+
+}
+.banner-description{
+        color:var(--primary-color);
+        font-weight: 600;
+        margin: 20px 0;
+}
+.prebook-btn{
+        background-color: var(--primary-btn-color);
+        padding: 10px 24px;
+        color:white;
+        font-weight: 700;
+        border: 0;
+        border-radius: 41px;
+
+}
+.banner-section img{
+        background-image: url(../images/Circle\ design.svg);
+        background-size:cover;
+        width: 400px;
+        margin-top: 80px;
+        padding-bottom: 25px;
+}
