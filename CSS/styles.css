@@ -2,6 +2,7 @@
 * {
         margin: 0;
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap');
         font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -70,4 +71,103 @@ ul a {
         width: 400px;
         margin-top: 80px;
         padding-bottom: 25px;
+}
+
+
+/* sponsors styles */
+.sponsors{
+        margin-top: 80px;
+        display: flex;
+        justify-content: space-evenly;
+}
+
+/* collection section styles */
+.collection{
+        margin-top: 100px;
+}
+.collection-title{
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--primary-color);
+}
+.collection-cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        row-gap: 30px;
+}
+.card{
+        width: 300px;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+        padding: 20px;
+        border-radius: 5px;
+
+}
+.card-title{
+        color: #18191F;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 40px;
+}
+.card-price{
+        font-family:Inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 150%;
+}
+.card-rating{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        color: #5E6366;
+}
+.card-description{
+        color: #787885;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 143%;
+}
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+        nav{
+                flex-direction: column;
+        }
+        header{
+                margin: 0;
+        }
+        .nav-title{
+                display: flex;
+                justify-content: center;
+        }
+        nav>ul{
+                justify-content: center;
+                margin-top: 10px;
+        }
+        .banner-section{
+                flex-direction:column-reverse;
+                gap:0;
+                text-align: center;
+        }
+        .banner-title{
+                font-size: 28px;
+
+        }
+        .banner-section div{
+                margin-top: 50px;
+        }
+        .banner-section img{
+                margin: 20px 20px;
+        }
+        .sponsors{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                margin-left: 45px;
+        }
+        .sponsors img{
+                width: 50px;
+                margin-bottom: 20px;
+        }
 }
